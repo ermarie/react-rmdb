@@ -20,7 +20,8 @@ import Spinner from "./elements/Spinner";
 import { useHomeFetch } from "./hooks/useHomeFetch";
 
 const Home = () => {
-  const [{ state, loadin, error }, fetchMovies] = useHomeFetch();
+  const [{ state, loading, error }, fetchMovies] = useHomeFetch();
+  console.log(state);
 
   return (
     <>
